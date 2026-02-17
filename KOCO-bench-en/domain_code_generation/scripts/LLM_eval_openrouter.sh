@@ -30,7 +30,7 @@ PROJECT_DIR="${PROJECT_DIR}/domain_code_generation"
 # Parse algorithm methods
 # Test example name (empty = process all)
 FRAMEWORK="${FRAMEWORK:-$DEFAULT_FRAMEWORK}"
-TEST_EXAMPLE="${TEST_EXAMPLE:-PURE}"
+TEST_EXAMPLE="${TEST_EXAMPLE:-}"
 
 if ! [[ "$PASS_ANY" =~ ^[0-9]+$ ]] || [ "$PASS_ANY" -lt 1 ]; then
     echo "❌ Error: PASS_ANY must be a positive integer, got: ${PASS_ANY}"
